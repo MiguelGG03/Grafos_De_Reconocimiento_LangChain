@@ -3,5 +3,5 @@
 El enlace la repositorio: [GitHubt](https://github.com/MiguelGG03/Grafos_De_Reconocimiento_LangChain.git)
 
 Participates:
-- Gonzalo Matínez
+- Gonzalo Martínez
 - Miguel González
