@@ -1,2 +1,5 @@
 Para que ChatGPT pueda proporcionar información precisa, actual 
 y confiable, abordando de manera efectiva los problemas de "alucinación",
+vamos a probar con un experimento de grafo de reconocimiento a nivel de 
+oracion.
+Usaremos la librería LangChain

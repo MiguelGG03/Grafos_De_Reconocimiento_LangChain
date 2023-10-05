@@ -1,11 +1,10 @@
-import os
-import openai
-import config
+from langchain.llms import OpenAI
+from langchain.indexes import GraphIndexCreator
+from langchain.chains import GraphQAChain
+from langchain.prompts import PromptTemplate
 
-openai.api_key = config.API_KEY
+text = "Apple announced the Vision Pro in 2023."
 
-question = "When did apple announced the Vision Pro?"
-completion = openai.ChatCompletion.create(model="gpt-3.5-turbo",
-                                          temperature=0,
-                                          messages=[{"role": "user",
-                                                     "content": question}])
+index_creator = GraphIndexCreator(llm=OpenAI(temperature=0))
+graph = index_creator.from_text(text)
+graph.get_triples()
