@@ -7,4 +7,4 @@ text = "Apple announced the Vision Pro in 2023."
 
 index_creator = GraphIndexCreator(llm=OpenAI(temperature=0))
 graph = index_creator.from_text(text)
-graph.get_triples()
+print(graph.get_triples())
